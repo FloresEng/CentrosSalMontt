@@ -13,10 +13,10 @@ public class JefeZonal {
     /**
      * Construye un nuevo jefe zonal.
      *
-     * @param nombre Nombre del jefe zonal.
+     * @param nomJefe Nombre del jefe zonal.
      * @param zona Zona geográfica que supervisa.
      */
-    public JefeZonal(String nombre, String zona){
+    public JefeZonal(String nomJefe, String zona){
 
         if (nomJefe == null || nomJefe.isBlank())
             throw new IllegalArgumentException("Nombre de jefe no puede estar vacío");
@@ -24,7 +24,7 @@ public class JefeZonal {
         if (zona == null || zona.isBlank())
             throw new IllegalArgumentException("Debe indicar zona a cargo del jefe");
 
-        this.nomJefe = nombre;
+        this.nomJefe = nomJefe;
         this.zona = zona;
     }
 
